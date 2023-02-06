@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      html,
+      body,
+      div,
+      span,
+      applet,
+      object,
+      iframe,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      blockquote,
+      pre,
+      a,
+      abbr,
+      acronym,
+      address,
+      big,
+      cite,
+      code,
+      del,
+      dfn,
+      em,
+      img,
+      ins,
+      kbd,
+      q,
+      s,
+      samp,
+      small,
+      strike,
+      strong,
+      sub,
+      sup,
+      tt,
+      var,
+      b,
+      u,
+      i,
+      center,
+      dl,
+      dt,
+      dd,
+      ol,
+      ul,
+      li,
+      fieldset,
+      form,
+      label,
+      legend,
+      table,
+      caption,
+      tbody,
+      tfoot,
+      thead,
+      tr,
+      th,
+      td,
+      article,
+      aside,
+      canvas,
+      details,
+      embed,
+      figure,
+      figcaption,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      output,
+      ruby,
+      section,
+      summary,
+      time,
+      mark,
+      audio,
+      video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+      }
+      /* HTML5 display-role reset for older browsers */
+      article,
+      aside,
+      details,
+      figcaption,
+      figure,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      section {
+        display: block;
+      }
+      body {
+        line-height: 1;
+      }
+      ol,
+      ul {
+        list-style: none;
+      }
+      blockquote,
+      q {
+        quotes: none;
+      }
+      blockquote:before,
+      blockquote:after,
+      q:before,
+      q:after {
+        content: "";
+        content: none;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      .wrapper {
+        max-width: 1440px;
+        margin: 0 auto;
+      }
+      .container {
+        max-width: 1170px;
+        padding: 0 15px;
+        margin: 0 auto;
+      }
+      .header {
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+      .tabs {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        justify-content: space-around;
+        margin-bottom: 30px;
+      }
+
+      .tab-link {
+        display: inline-block;
+        padding: 10px 15px;
+        cursor: pointer;
+      }
+
+      .tab-content {
+        display: none;
+        opacity: 0;
+      }
+
+      .tab-content.current {
+        display: block;
+        opacity: 1;
+      }
+      .product-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .product {
+        width: 30%;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .product img {
+        width: 100%;
+        height: 250px;
+        margin-bottom: 10px;
+        object-fit: contain;
+      }
+      .info {
+        margin-bottom: 20px;
+      }
+
+      .customer_info {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+      }
+
+      .customer_info span {
+        width: 30%;
+      }
+      .customer_info input {
+        width: 70%;
+      }
+      .payment-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .payment-table th,
+      .payment-table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+
+      .payment-table th {
+        background-color: #ddd;
+      }
+    </style>
+    <div class="wrapper">
+      <div class="container">
+        <header>
+          <h1 class="header">Duc Pizza</h1>
+        </header>
+        <main>
+          <!-- tabs -->
+          <ul class="tabs">
+            <li class="tab-link current" data-tab="tab-1">Mua hàng 1</li>
+            <li class="tab-link" data-tab="tab-2">Mua hàng 2</li>
+            <li class="tab-link" data-tab="tab-3">Thanh Toán</li>
+          </ul>
+
+          <div id="tab-1" class="tab-content current">
+            <!-- Content for Tab 1 goes here -->
+            <div class="product-list">
+              <div class="product">
+                <img src="./image/download (2).jpeg" alt="Product 1" />
+                <h3>Product 1</h3>
+                <p>Product 1 description goes here.</p>
+              </div>
+              <div class="product">
+                <img src="./image/download (1).jpeg" alt="Product 2" />
+                <h3>Product 2</h3>
+                <p>Product 2 description goes here.</p>
+              </div>
+              <div class="product">
+                <img src="./image/download.jpeg" alt="Product 1" />
+                <h3>Product 3</h3>
+                <p>Product 3 description goes here.</p>
+              </div>
+              <!-- More products go here -->
+            </div>
+          </div>
+
+          <div id="tab-2" class="tab-content">
+            <!-- Content for Tab 2 goes here -->
+            daaa
+          </div>
+
+          <div id="tab-3" class="tab-content">
+            <!-- Content for Tab 3 goes here -->
+            abnf
+          </div>
+
+          <!-- payment-->
+          <div class="payment">
+            <div class="info">
+              <div class="customer_info">
+                <span class="name">Họ và tên:</span>
+                <input type="text" value="" placeholder="Nhập..." />
+              </div>
+              <div class="customer_info">
+                <span class="date">Ngày Sinh:</span>
+                <input type="date" value="" placeholder="Nhập..." />
+              </div>
+              <div class="customer_info">
+                <span class="phone">Số điện thoại:</span>
+                <input type="number" value="" placeholder="Nhập..." />
+              </div>
+            </div>
+            <table class="payment-table">
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>Description</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Product 1</td>
+                  <td>Product 1 description goes here</td>
+                  <td>$100</td>
+                </tr>
+                <tr>
+                  <td>Product 2</td>
+                  <td>Product 2 description goes here</td>
+                  <td>$200</td>
+                </tr>
+                <!-- More rows go here -->
+              </tbody>
+            </table>
+
+            <button type="submit" style="margin-top: 30px; margin-left: auto; display: flex;">Thanh toán</button>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $(".tab-link").click(function () {
+          console.log("tab");
+          var tab_id = $(this).attr("data-tab");
+
+          $(".tab-link").removeClass("current");
+          $(".tab-content").removeClass("current");
+
+          $(this).addClass("current");
+          $("#" + tab_id).addClass("current");
+        });
+      });
+    </script>
+  </body>
+</html>
